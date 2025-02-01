@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,44 +7,63 @@
     <title>My Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body class="bg-gray-100">
 
     <!-- Navbar -->
-    <nav class="bg-white shadow-md p-4 flex justify-between">
-        <h1 class="text-2xl font-bold">My Portfolio</h1>
-        <ul class="flex space-x-4">
-            <li><a href="#about" class="hover:text-blue-500">About</a></li>
-            <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
-            <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
-        </ul>
+    <nav class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">My Portfolio</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="text-center py-20">
-        <h2 class="text-4xl font-bold">Hi, I'm [Harsh Patel]</h2>
-        <p class="text-gray-600 mt-4">A Web Developer passionate about building cool projects.</p>
+    <header class="text-center py-20 bg-blue-500 text-white">
+        <h2 class="text-4xl font-bold">Hello, I'm [Your Name]</h2>
+        <p class="text-lg mt-2">Web Developer & Designer</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto py-12 text-center">
+        <img src="assets/profile.jpg" alt="Profile" class="w-32 h-32 mx-auto rounded-full">
+        <h3 class="text-3xl font-semibold mt-4">About Me</h3>
+        <p class="text-gray-600 mt-2 px-6">I am a passionate web developer with experience in HTML, CSS, JavaScript, and Tailwind CSS.</p>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="p-10">
-        <h3 class="text-2xl font-bold mb-4">Projects</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h4 class="font-bold">Project 1</h4>
-                <p class="text-gray-600">Description of project 1.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h4 class="font-bold">Project 2</h4>
-                <p class="text-gray-600">Description of project 2.</p>
+    <!-- Projects Section -->
+    <section id="projects" class="bg-gray-200 py-12">
+        <div class="container mx-auto text-center">
+            <h3 class="text-3xl font-semibold">Projects</h3>
+            <div class="grid md:grid-cols-2 gap-6 mt-6 px-6">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <img src="assets/project1.png" alt="Project 1" class="w-full h-48 object-cover rounded">
+                    <h4 class="text-xl font-semibold mt-2">Project One</h4>
+                    <p class="text-gray-600">A brief description of the project.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <img src="assets/project2.png" alt="Project 2" class="w-full h-48 object-cover rounded">
+                    <h4 class="text-xl font-semibold mt-2">Project Two</h4>
+                    <p class="text-gray-600">A brief description of the project.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="p-10 text-center">
-        <h3 class="text-2xl font-bold">Contact Me</h3>
-        <p class="text-gray-600">Email: harshpatel6719@example.com</p>
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 text-center">
+        <h3 class="text-3xl font-semibold">Contact Me</h3>
+        <p class="text-gray-600 mt-2">Let's work together! Reach out via email.</p>
+        <a href="mailto:harshpatel6719.email@example.com" class="mt-4 inline-block bg-blue-500 text-white px-6 py-2 rounded-full">Email Me</a>
     </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2025 [Harsh Patel]. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
